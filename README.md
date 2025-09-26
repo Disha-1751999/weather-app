@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌦️ Responsive Weather Application  
 
-## Getting Started
+A responsive weather application built with **React.js** that fetches real-time weather data from the **OpenWeatherMap API**. The app follows the provided [Figma Design](https://www.figma.com/design/kYIFVoln5iuxQqWZQDoy6F/weather-app?node-id=156-791&t=XyZL0MQEa5GEexbQ-1) and includes **search, weather display, forecast, and error handling** features.  
 
-First, run the development server:
+---
 
+## 🚀 Features  
+
+### 🔍 Search Implementation  
+- Search for any city using the search bar.  
+- Display real-time weather data for the searched city.  
+- Show error messages for invalid city names.  
+- Clear input automatically after a successful search.  
+
+### 🌡️ Weather Display  
+- Current temperature (large display).  
+- Weather condition with icon.  
+- City name & country.  
+- Current date.  
+
+### 📊 Weather Statistics  
+- Feels-like temperature.  
+- Humidity percentage.  
+- Wind speed.  
+- Atmospheric pressure (or precipitation).  
+
+### 📅 Forecast Display  
+- **6-day forecast**:  
+  - Day names  
+  - High/Low temperatures  
+  - Weather icons  
+- **Hourly forecast (8 hours minimum)** for the selected day.  
+
+### 🌀 UI States  
+- **Loading state**: Shown during API calls.  
+- **Error state**: For failed requests (invalid city, network issue).  
+- **Empty state**: Before the first search.  
+
+---
+
+## ⚙️ Tech Stack  
+
+- **Frontend:** React.js  
+- **Styling:** Tailwind CSS (responsive mobile-first design)  
+- **State Management:**  Redux  
+- **Deployment:** Vercel  
+- **API Provider:** [OpenWeatherMap](https://openweathermap.org/)  
+
+---
+
+## 🖥️ Installation & Setup  
+
+1. **Clone the repository**  
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Disha-1751999/weather-app
+cd weather-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**  
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. **Setup environment variables**  
+```bash
+NEXT_PUBLIC_API_KEY=9d729cfd40c256defac28e6a8266b774
+NEXT_PUBLIC_BASE_URL=https://api.openweathermap.org
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Run the project**  
+```bash
+npm run dev
+```
 
-## Learn More
+5. **Run the project**  
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+6. **Run in production**  
+```bash
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📸 Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Initial Screen 
+![Home Page](./assets/initial-screen.png)  
 
-## Deploy on Vercel
+### Loading Screen  
+![Forecast](./assets/loading-screen) 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Dashboard
+![Forecast](./assets/dashboard) 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Error Screen  
+![Forecast](./assets/error-screen) 
