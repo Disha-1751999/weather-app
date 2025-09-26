@@ -88,10 +88,10 @@ npm start
 ![Home Page](./assets/initial-screen.png)  
 
 ### Loading Screen  
-![Forecast](./assets/loading-screen) 
+![Forecast](./assets/loading-screen.png) 
 
 ### Dashboard
-![Forecast](./assets/dashboard) 
+![Forecast](./assets/dashboard.png) 
 
 ### Error Screen  
-![Forecast](./assets/error-screen) 
+![Forecast](./assets/error-screen.png) 
