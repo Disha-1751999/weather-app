@@ -1,6 +1,6 @@
-# 🌦️ Responsive Weather Application  
+# 🌦️ Weather Application  
 
-A responsive weather application built with **React.js** that fetches real-time weather data from the **OpenWeatherMap API**. The app follows the provided [Figma Design](https://www.figma.com/design/kYIFVoln5iuxQqWZQDoy6F/weather-app?node-id=156-791&t=XyZL0MQEa5GEexbQ-1) and includes **search, weather display, forecast, and error handling** features.  
+A weather application built with **Next.js** that fetches real-time weather data from the **OpenWeatherMap API**. The app follows the provided [Figma Design](https://www.figma.com/design/kYIFVoln5iuxQqWZQDoy6F/weather-app?node-id=156-791&t=XyZL0MQEa5GEexbQ-1) and includes **search, weather display, forecast, and error handling** features.  
 
 ---
 
@@ -40,7 +40,7 @@ A responsive weather application built with **React.js** that fetches real-time 
 
 ## ⚙️ Tech Stack  
 
-- **Frontend:** React.js  
+- **Frontend:** Next.js  
 - **Styling:** Tailwind CSS (responsive mobile-first design)  
 - **State Management:**  Redux  
 - **Deployment:** Vercel  
@@ -65,6 +65,7 @@ npm install
 ```bash
 NEXT_PUBLIC_API_KEY=9d729cfd40c256defac28e6a8266b774
 NEXT_PUBLIC_BASE_URL=https://api.openweathermap.org
+NEXT_PUBLIC_ICON_URL=https://openweathermap.org
 ```
 
 4. **Run the project**  
