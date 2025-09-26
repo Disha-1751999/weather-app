@@ -30,7 +30,7 @@ export default function UnitDropdown() {
     <div className="relative inline-block text-xs ">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center space-x-2 bg-[#1F293780]  px-3 py-2 rounded-lg text-white hover:bg-[#1F293780]"
+        className="flex items-center space-x-2 bg-Dark  px-3 py-2 rounded-lg text-white hover:bg-Dark"
       >
         <Settings size={16} />
         <span>{currentLabel}</span>

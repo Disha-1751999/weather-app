@@ -34,7 +34,7 @@ export default function WeatherDashboard() {
           height={50}
           className="mx-auto mt-20 mb-4 opacity-70"
         />
-        <p className="text-center text-[#9CA3AF]">
+        <p className="text-center text-lighterGray">
           Search for a city to see weather information
         </p>
       </div>

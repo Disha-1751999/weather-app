@@ -2,14 +2,16 @@ import Image from "next/image";
 import React from "react";
 import { useSelector } from "react-redux";
 
+const iconBaseUrl = process.env.NEXT_PUBLIC_ICON_URL;
+
 const HourlyForecast = () => {
   const { data, hourly, unit } = useSelector((state) => state.weather);
   return (
     <>
-      <div className="bg-[#1F293780] rounded-xl p-4  flex flex-col min-w-0">
+      <div className="bg-Dark rounded-xl p-4  flex flex-col min-w-0">
         <div className=" flex justify-between items-center mb-6 mt-2">
           <h3 className="text-lg font-semibold">Hourly forecast</h3>
-          <span className="bg-[#374151] text-xs px-3 py-1 rounded">
+          <span className="bg-lightGray text-xs px-3 py-1 rounded">
             {new Date(data.dt * 1000).toLocaleDateString(undefined, {
               weekday: "long",
             })}
@@ -24,7 +26,7 @@ const HourlyForecast = () => {
                 hour12: true,
               }
             );
-            const iconUrl = `https://openweathermap.org/img/wn/${hour.icon}@2x.png`;
+            const iconUrl = `${iconBaseUrl}/img/wn/${hour.icon}@2x.png`;
             return (
               <li key={hour.time} className="flex justify-between items-center">
                 <span className="flex items-center space-x-2">

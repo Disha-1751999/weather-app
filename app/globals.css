@@ -11,7 +11,16 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  --color-bg-dark: #1F293780;
+  --color-Dark: #1F293780;
+  --color-lightGray: #374151;
+  --color-lighterGray: #9CA3AF;
+  --color-CustomeBlue: #2563EB;
+  --color-CustomPurple: #9333EA;
+
+  --color-bgTheme1:#1E1B4B;
+  --color-bgTheme2:#581C87;
+  --color-bgTheme3:#1E1B4B;
+
 }
 
 @media (prefers-color-scheme: dark) {

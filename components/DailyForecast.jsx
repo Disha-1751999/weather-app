@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import { useSelector } from "react-redux";
 
+const iconBaseUrl = process.env.NEXT_PUBLIC_ICON_URL;
+
 const DailyForecast = () => {
   const { daily } = useSelector((state) => state.weather);
   return (
@@ -17,12 +19,12 @@ const DailyForecast = () => {
               }
             );
 
-            const iconUrl = `https://openweathermap.org/img/wn/${day.icon}@2x.png`;
+            const iconUrl = `${iconBaseUrl}/img/wn/${day.icon}@2x.png`;
 
             return (
               <div
                 key={day.date}
-                className="bg-[#1F293780] p-4 rounded-lg text-center flex flex-col items-center gap-1"
+                className="bg-Dark p-4 rounded-lg text-center flex flex-col items-center gap-1"
               >
                 <p className="text-sm">{dayName}</p>
                 <Image src={iconUrl} alt={day.main} width={50} height={50} />
